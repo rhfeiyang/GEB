@@ -2,7 +2,7 @@
 
 <p align="center">
   <a href="https://geb-video.github.io"><img alt="Project page" src="https://img.shields.io/badge/Project%20page-geb--video.github.io-0a5f62"></a>
-  <a href="https://arxiv.org/abs/XXXX.XXXXX"><img alt="arXiv" src="https://img.shields.io/badge/arXiv-coming%20soon-b31b1b"></a>
+  <a href="https://arxiv.org/abs/2609.38155"><img alt="arXiv" src="https://img.shields.io/badge/arXiv-2609.38155-b31b1b"></a>
   <img alt="Artifacts" src="https://img.shields.io/badge/Artifacts-coming%20soon-d9891a">
 </p>
 
@@ -48,7 +48,7 @@ GEB is evaluated on four benchmarks over week-long and day-long recordings, with
   <img src="assets/table_main.webp" alt="Main results table: accuracy of sixteen systems on EgoLifeQA, Ego-R1-Bench and MM-Lifelong Test@Week and Test@Day. GEB has the best overall score in every column." width="90%">
 </p>
 
-Full tables, ablations and the evidence-access analysis are on the [project page](https://geb-video.github.io) and in the paper.
+Full tables, ablations and the evidence-access analysis are on the [project page](https://geb-video.github.io) and in the [paper](https://arxiv.org/abs/2609.38155).
 
 ## Release
 
@@ -57,11 +57,13 @@ The code and the artifacts are coming soon. Stay tuned!
 ## Citation
 
 ```bibtex
-@article{ren2026geb,
-  title   = {Beyond the Timeline: Augmenting Long-Video Memory with Grounded Entity Biographies},
-  author  = {Ren, Hui and Fan, Lei and Pao, Henry and Guo, Han and Zia, Zeeshan and
-             Chen, Ying and Schwing, Alexander G. and Hua, Gang},
-  journal = {arXiv preprint arXiv:XXXX.XXXXX},
-  year    = {2026}
+@misc{ren2026GEB,
+      title={Beyond the Timeline: Augmenting Long-Video Memory with Grounded Entity Biographies}, 
+      author={Hui Ren and Lei Fan and Henry Pao and Han Guo and Zeeshan Zia and Ying Chen and Alexander Schwing and Gang Hua},
+      year={2026},
+      eprint={2609.38155},
+      archivePrefix={arXiv},
+      primaryClass={cs.CV},
+      url={https://arxiv.org/abs/2609.38155}, 
 }
 ```
