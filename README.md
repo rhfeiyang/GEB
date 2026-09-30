@@ -49,12 +49,6 @@ The memory is written in two steps and read in a third:
 2. **Associate.** An observation joins an existing biography only if it matches the entity's recent references and is never seen apart from them in a shared frame; otherwise it starts a new one.
 3. **Read.** Retrieval enters through a matched moment, follows same-instance edges to the rest of the biography, and reaches the episodes around each encounter. The biography excerpt also lists the appearances not yet inspected, giving the controller concrete targets for further search.
 
-The animation follows one blue hand mixer from Day 1 to Day 6 through these steps. An interactive version is on the [project page](https://geb-video.github.io/#method).
-
-<p align="center">
-  <img src="assets/pipeline.webp" alt="Animation of the method in six stages. Ground: a Day 1 observation of a blue hand mixer is described. Observe: the mixer is seen again on Days 3 to 6. Associate: the observations are linked into one persistent instance. Retrieve: the controller's search matches one moment and relevance flows along the identity links. Read: the biography excerpt and the linked episode are read. Answer: the answer model names Shure." width="100%">
-</p>
-
 ## Results
 
 GEB is evaluated on four benchmarks over week-long and day-long recordings, with multiple-choice and open-ended questions: EgoLifeQA, Ego-R1-Bench, MM-Lifelong (Test@Week and Test@Day) and MultiHop-EgoQA. On EgoLifeQA it reaches 72.0% accuracy, 4.4 points above the best published result, with the same controller, answer model and retrieval limits as the strongest baseline.
