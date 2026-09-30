@@ -1,8 +1,9 @@
 <h1 align="center">Beyond the Timeline:<br>Augmenting Long-Video Memory with Grounded Entity Biographies</h1>
 
 <p align="center">
-  <a href="https://geb-video.github.io"><img alt="Project page" src="https://img.shields.io/badge/Project%20page-geb--video.github.io-0a5f62"></a>
+  <a href="https://geb-video.github.io"><img alt="Project page" src="https://img.shields.io/badge/%F0%9F%8C%90%20Project-Page-0a5f62"></a>
   <a href="https://arxiv.org/abs/2609.38155"><img alt="arXiv" src="https://img.shields.io/badge/arXiv-2609.38155-b31b1b"></a>
+  <a href="https://huggingface.co/papers/2609.38155"><img alt="Hugging Face Paper" src="https://img.shields.io/badge/%F0%9F%A4%97%20Hugging%20Face-Paper-ffd21e"></a>
   <img alt="Artifacts" src="https://img.shields.io/badge/Artifacts-coming%20soon-d9891a">
 </p>
 
