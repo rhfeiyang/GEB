@@ -23,11 +23,19 @@
   <img src="assets/teaser.webp" alt="Two red mugs, two biographies. A memory of moments cannot tell which mug went into the dishwasher; a memory of entities can." width="100%">
 </p>
 
-> **Status.** This repository currently hosts the project description only. The code (memory construction, retrieval and the evaluation harness) and the released artifacts (memories, descriptions and result files) are being prepared for release and will appear here. Watch or star the repository to be notified.
 
 ## Overview
 
 Answering questions about long videos often requires connecting events involving the same objects across hours or days. Chronological descriptions and text-derived entities can leave physical identity unresolved: different objects may share a description, while observations of the same object remain disconnected across events. Retrieving relevant events therefore does not necessarily recover the *biography* of the particular entity a question concerns.
+
+History is written in two ways, and long-video memory needs both:
+
+- **Chronicle**: follows events through time and recalls what happened at a moment. Two accurate descriptions of "a red mug" still cannot tell whether they are the same mug.
+- **Biography**: follows one subject through those events and recalls what happened to *this* mug. The coffee mug never reaches the dishwasher.
+
+<p align="center">
+  <img src="assets/regroup.webp" alt="Animation: five moments in time order (the chronicle) are regrouped into two biographies, one per red mug. The striped mug is filled with coffee and returns to the counter; the solid red mug is picked up and goes into the dishwasher." width="90%">
+</p>
 
 **Grounded Entity Biographies (GEB)** is a long-video memory framework that groups visually grounded observations of the same physical instance across clips into retrievable biographies while preserving the context of each moment. During question answering, the biography is retrieved alongside episodic evidence, allowing the model to follow an entity through events using identity links established during memory construction.
 
@@ -40,6 +48,12 @@ The memory is written in two steps and read in a third:
 1. **Ground.** Each tracked subject in a clip becomes an observation, described from its own crops, the scene frames and the dialogue of that moment.
 2. **Associate.** An observation joins an existing biography only if it matches the entity's recent references and is never seen apart from them in a shared frame; otherwise it starts a new one.
 3. **Read.** Retrieval enters through a matched moment, follows same-instance edges to the rest of the biography, and reaches the episodes around each encounter. The biography excerpt also lists the appearances not yet inspected, giving the controller concrete targets for further search.
+
+The animation follows one blue hand mixer from Day 1 to Day 6 through these steps. An interactive version is on the [project page](https://geb-video.github.io/#method).
+
+<p align="center">
+  <img src="assets/pipeline.webp" alt="Animation of the method in six stages. Ground: a Day 1 observation of a blue hand mixer is described. Observe: the mixer is seen again on Days 3 to 6. Associate: the observations are linked into one persistent instance. Retrieve: the controller's search matches one moment and relevance flows along the identity links. Read: the biography excerpt and the linked episode are read. Answer: the answer model names Shure." width="100%">
+</p>
 
 ## Results
 
